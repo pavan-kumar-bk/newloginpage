@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lgin / Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user box">
+                <div class="img"><img src="img/MN7.jpg" alt="image" width="400" height="500"></div>
+                <div class="formbox">
+                    <form>
+                        <h2>Login</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="password" name="" placeholder="Password">
+                        <input type="submit" name="" value="Sign In">
+                        <p class="signin">Don't have an account ?<a href="#" onclick="toggleform();">Signup here.</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signup">
+                <div class="formbox">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="E-mail">
+                        <input type="password" name="" placeholder="Create Password">
+                        <input type="password" name="" placeholder="retype Password">
+                        <input type="submit" name="" value="Sign Up">
+                        <p class="signin">Already have an account ?<a href="#" onclick="toggleform();">SignIn here.</a></p>
+                    </form>
+                </div>
+                <div class="img"><img src="img/MN6.jpg" alt="image" width="400" height="500"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleform(){
+            var container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
